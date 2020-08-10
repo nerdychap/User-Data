@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
+import NoMatchWrapper from '../../styles/NoMatchStyles';
 
-export default class NoMatch extends Component {
-    render() {
-        return (
-            <div>
-                <h1>Unfortunately, this page doesn't exist.</h1>
-            </div>
-        )
-    }
+const NoMatch = () => {
+
+    return (
+        <NoMatchWrapper>
+            <h1>Unfortunately, this page doesn't exist.</h1>
+        </NoMatchWrapper>
+    )
+
 }
+export default NoMatch;

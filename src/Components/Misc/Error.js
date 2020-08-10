@@ -1,22 +1,20 @@
 import React from 'react';
-import styled from 'styled-components';
+import ErrorStyle, { ErrorMessage } from '../../styles/ErrorStyles';
+import Navigation from '../Navigation/Navigation';
+import { Route } from 'react-router-dom';
+import Home from '../Pages/Home';
 
-const ErrorStyle = styled.div`
-    align-content: center;
-    color: red;
-    display: grid;
-    height: 100vh;
-    text-align: center;
-`;
-const ErrorMessage = styled.h1`
-    text-transform: uppercase;
-`;
 
 function Error(props) {
     return (
-        <ErrorStyle>
-            <ErrorMessage>{props.error}</ErrorMessage>
-        </ErrorStyle>
+        <>
+            <Navigation />
+            <ErrorStyle>
+                <ErrorMessage>{props.error}</ErrorMessage>
+            </ErrorStyle>
+            <Route exact path="/" render={(props) => <Home {...props} />} />
+        </>
+
     )
 }
 
