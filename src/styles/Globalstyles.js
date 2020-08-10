@@ -1,4 +1,4 @@
-const { default: styled, createGlobalStyle } = require("styled-components");
+const { createGlobalStyle } = require("styled-components");
 
 
 const GlobalStyle = createGlobalStyle`

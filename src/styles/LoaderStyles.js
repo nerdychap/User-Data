@@ -7,7 +7,7 @@ const LoaderStyle = styled.div`
     display: grid;
     justify-content: center;
     align-content: center;
-    height: 100vh;
+    height: 50vh;
 `;
 export const LoaderElement = styled.div`
         width: 50px;

@@ -12,7 +12,7 @@ const FullProfile = () => {
 
     useEffect(() => {
         document.title = `User: ${first} ${last}`;
-    }, [first]);
+    });
 
     return (
         <ProfileWrapper>
